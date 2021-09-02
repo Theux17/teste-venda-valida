@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="/forms" method="POST">
+
+        <div class="fields">
+            <h3>Dados pessoais</h3>
+
+            <div class="item">
+                <div>Email</div>
+                <div class="input">
+                    <input 
+                        type="email" 
+                        id="email"
+                        required
+                        name="email" 
+                        placeholder="Email" 
+                    >
+                </div>
+            </div>
+            
+            <div class="item">
+                <div>Nome</div>
+                <div class="input">
+                    <input 
+                        type="text" 
+                        name="firstName" 
+                        placeholder="Primeiro nome" 
+                    >
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Sobrenome</div>
+                <div class="input">
+                    <input 
+                        type="text" 
+                        name="lastName" 
+                        placeholder="Sobrenome" 
+                    >
+                </div>
+            </div>
+
+            <div class="item">
+                <div>CPF</div>
+                <div class="input">
+                    <input 
+                        type="text" 
+                        name="CPF" 
+                        placeholder="CPF" 
+                    >
+                </div>
+            </div>
+            
+            <div class="item">
+                <div>Telefone</div>
+                <div class="input">
+                    <input 
+                        type="text" 
+                        required
+                        name="telephone" 
+                        placeholder="Telefone" 
+                    >
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="input">
+                    <input 
+                        type="checkbox" 
+                    >
+                    Quero receber e-mails com promoções.
+                </div>
+            </div>
+            
+        </div>
+
+        <button class="button" type="submit">Ir para Entrega</button>
+
+    </form>
+
+    <script src="./index.js"></script>
+</body>
+</html>
