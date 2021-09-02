@@ -5,13 +5,15 @@ import { Form } from '../models/Form'
 export default {
     async create(req: Request, res: Response) {
         try {
-            const {
+            let {
                 email,
                 firstName,
                 lastName,
                 CPF,
                 telephone
             } = req.body
+
+            telephone = telephone.replace(/\D+/g, '');
 
             const form = await Form.create({
                 email,
